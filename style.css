@@ -376,6 +376,7 @@ article.icon {
 
 #projects {
     position: relative;
+    margin: 0;
 }
 
 .color-container {
@@ -401,35 +402,48 @@ article.icon {
 
 .project-details-container {
     display: flex;
-    justify-content:last baseline;
-    flex-direction: column;
-    height: 90vh;
-}
-
-.project-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    display: flex;
-    height: 33vh;
-    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100dvw;
+    height: 100%;
+    left: 0;
+    margin-top: 15px;
+    gap: 1.25em;
+    box-sizing: border-box;
+    padding: 1rem;
 }
 
 .project-container {
-    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    height: fit-content;
-    width: fit-content;
+    height: 400px;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    min-width: 450px;
+    max-width: 500px;
+}
+
+#arrow1 {
+    margin-right: 10rem;
+}
+
+.project-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .article-container1, .article-container2, .article-container3 {
     display: flex;
     text-align: initial;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
@@ -447,12 +461,17 @@ article.icon {
     align-items: center;
     transition: .5s ease;
     opacity: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 1rem;
 }
 
 .text1, .text2, .text3 {
+    height: 100%;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    font-size: 0.75vw;
+    max-width: 90%;
+    font-size: 13.67px;
 }
 
 .article-container1:hover .overlay1, .article-container2:hover .overlay2, .article-container3:hover .overlay3{
