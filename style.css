@@ -465,6 +465,9 @@ article.icon {
     box-sizing: border-box;
     padding-top: 1rem;
 }
+.overlay2 {
+    padding-top: 2rem;
+}
 
 .text1, .text2, .text3 {
     height: 100%;
